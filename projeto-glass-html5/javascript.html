@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var estado = false;
+        function acenderLampada(){
+            document.getElementById('mudar').src="_imagens/lampada-acesa.jpg";
+        }
+        function apagarLampada(){
+            document.getElementById('mudar').src="_imagens/lampada-apagada.jpg";
+        }
+        function quebrarLampada(){
+            document.getElementById('mudar').src="_imagens/lampada-quebrada.jpg";
+            estado = True;
+        }
+        if (estado == True){
+            document.getElementById('mudar').src="_imagens/lampada-quebrada.jpg";
+            stop
+        }
+    </script>    
+</head>
+<body>
+    <img src="_imagens/lampada-apagada.jpg" id="mudar" onmousemove="acenderLampada()" onmouseout="apagarLampada()" onclick="quebrarLampada()">
+</body>
+</html>
